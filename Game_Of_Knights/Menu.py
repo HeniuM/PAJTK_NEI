@@ -1,34 +1,67 @@
 def show_rules():
+
+    """
+    Function to display the game rules by reading them from a file.
+
+    Args:
+        None
+
+    Returns:
+        None
+    """
+
     try:
-        with open("zasady.txt", "r") as file:
+        with open("rules.txt", "r") as file:
             rules = file.read()
             print(rules)
 
     except FileNotFoundError:
-        print("Nie można zaleźć pliku z zasadami!!")
+        print("Can not find the file with the game rules!!")
 
 
 def show_menu():
-    print("Wybierz opcje: ")
-    print("1) Zasady gry ")
-    print("2) Prezentacja rozgrywki automatycznej (AI vs AI)")
-    print("3) Rozgrywka normalna (Gracz vs AI)")
 
-    choice = input("Wybierz numer opcji: ")
+    """
+    Function to display the game menu and prompt the user to choose an option.
+
+    Args:
+        None
+
+    Returns:
+        str: The user's choice (1, 2, or 3).
+    """
+
+    print("Choose option: ")
+    print("1) Game rules ")
+    print("2) Presentation of the automatic gameplay (AI vs AI)")
+    print("3) Normal Gameplay (Player vs AI)")
+
+    choice = input("Choose option number: ")
     return choice
 
 
 def choose_board_size():
-    print("Wybierz rozmiar planszy")
+
+    """
+    Function to display options for board size and prompt the user to select one.
+
+    Args:
+        None
+
+    Returns:
+        tuple: The chosen board size (rows, columns) as a tuple.
+    """
+
+    print("Choose the board size")
     print("1) 8x8")
     print("2) 10x10")
 
-    choice = input("Wybierz numer opcji: ")
+    choice = input("Choose option number: ")
 
     if choice == "1":
         return (8, 8)
     elif choice == "2":
         return (10, 10)
     else:
-        print("Nieprawidłowy wybór, domyślnie ustawiamy planszę 8x8. ")
+        print("Wrong choice, setting the default board size to 8x8. ")
         return (8, 8)

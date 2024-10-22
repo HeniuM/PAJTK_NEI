@@ -1,0 +1,21 @@
+Rules of the game "Game of Knights":
+
+1. The game is played on a board of size 8x8 (or another size depending on the board size chosen at the start).
+
+2. Each player controls one knight, which starts the game in opposite corners of the board:
+- Player 1 starts in the top-left corner.
+- Player 2 (or AI) starts in the bottom-right corner.
+
+3. The knights move like in chess, performing an "L"-shaped move:
+- Two squares in one direction, then one square in a perpendicular direction, or one square in one direction, then two squares in another direction.
+
+4. After a move is made, the square from which the knight moved becomes blocked and cannot be returned to for the rest of the game.
+
+5. Players take turns making moves, trying to avoid the blocked squares.
+
+6. The goal of the game is to avoid being in a situation where you have no available moves:
+- The player who cannot make a legal move loses the game.
+
+7. The game ends when one of the players has no legal moves remaining.
+
+8. Moves must follow the knight's movement rules, and blocked squares are unavailable to the players.
