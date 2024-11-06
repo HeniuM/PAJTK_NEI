@@ -26,7 +26,7 @@ Poniżej definiujemy zmienne wejściowe dla systemu oceny personelu:
 
 kompetencje = ctrl.Antecedent(np.arange(0, 101, 1), 'kompetencje')
 pull_request = ctrl.Antecedent(np.arange(0, 101, 1), 'pull_request')
-liczba_pracodawcow = ctrl.Antecedent(np.arange(1, 11, 1), 'liczba_ pracodawców')
+liczba_pracodawcow = ctrl.Antecedent(np.arange(1, 11, 1), 'liczba_pracodawcow')
 
 """
 Poniżej definiujemy zmienne wyjściowe, które będą obliczane przez system:
