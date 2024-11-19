@@ -1,9 +1,10 @@
 import pandas as pd
+from sklearn.cluster import KMeans
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 
-# Ładowanie danych
+# Funkcja do ładowania danych
 def load_data():
     """
     Wczytuje dane z plików CSV i zwraca DataFrame'y dla użytkowników, filmów oraz ocen.
@@ -35,45 +36,48 @@ def create_user_item_matrix(ratings_df):
     return user_movie_matrix
 
 
-# Obliczanie podobieństwa między użytkownikami
-def calculate_user_similarity(user_movie_matrix):
+# Klasteryzacja użytkowników
+def cluster_users(user_movie_matrix, n_clusters=5):
     """
-    Oblicza macierz podobieństwa między użytkownikami przy użyciu cosinusowej miary podobieństwa.
+    Grupuje użytkowników w klastry na podstawie ich ocen za pomocą algorytmu K-Means.
 
     Args:
         user_movie_matrix (DataFrame): Macierz user-item z ocenami.
+        n_clusters (int): Liczba klastrów.
 
     Returns:
-        user_similarity (ndarray): Macierz podobieństwa między użytkownikami.
+        cluster_labels (Series): Etykiety klastrów dla każdego użytkownika.
     """
-    user_similarity = cosine_similarity(user_movie_matrix)
-    return user_similarity
+    kmeans = KMeans(n_clusters=n_clusters, random_state=42)
+    cluster_labels = kmeans.fit_predict(user_movie_matrix)
+    return cluster_labels
 
 
-# Rekomendowanie filmów dla użytkownika
+# Rekomendacje na podstawie klastrów
 def get_recommendations(user_id, user_similarity, user_movie_matrix, movies_df, n=5):
     """
-    Generuje rekomendacje filmowe dla danego użytkownika na podstawie podobnych użytkowników,
-    z wykluczeniem filmów dodanych przez samego użytkownika.
+    Generuje rekomendacje filmowe dla użytkownika na podstawie podobieństwa do innych użytkowników,
+    z wykluczeniem filmów, które użytkownik już ocenił.
 
     Args:
         user_id (int): ID użytkownika docelowego.
         user_similarity (ndarray): Macierz podobieństwa między użytkownikami.
         user_movie_matrix (DataFrame): Macierz user-item z ocenami.
-        movies_df (DataFrame): DataFrame zawierający informacje o filmach, w tym ID użytkownika, który dodał film.
+        movies_df (DataFrame): DataFrame zawierający informacje o filmach.
         n (int): Liczba rekomendacji do wygenerowania.
 
     Returns:
         recommendations (list): Lista rekomendowanych ID filmów.
     """
-    similar_users = np.argsort(-user_similarity[user_id-1])[1:n+1]  # Znajdź najbardziej podobnych użytkowników
+    similar_users = np.argsort(-user_similarity[user_id - 1])[1:]  # Znajdź najbardziej podobnych użytkowników
     movie_scores = {}
 
+    # Zbieranie ocen filmów od podobnych użytkowników
     for sim_user in similar_users:
         sim_user_ratings = user_movie_matrix.iloc[sim_user]
-        for movie_id, rating in sim_user_ratings.items():  # Zmiana iteritems() na items()
-            # Sprawdzenie, czy użytkownik ocenił film i czy użytkownik docelowy nie dodał filmu
-            if user_movie_matrix.loc[user_id, movie_id] == 0 and movies_df[movies_df['movie_id'] == movie_id]['added_by'].values[0] != user_id:
+        for movie_id, rating in sim_user_ratings.items():
+            # Pomijamy filmy, które użytkownik już ocenił
+            if user_movie_matrix.loc[user_id, movie_id] == 0:  # Jeśli użytkownik nie ocenił filmu
                 if movie_id not in movie_scores:
                     movie_scores[movie_id] = 0
                 movie_scores[movie_id] += rating  # Sumowanie ocen
@@ -83,30 +87,31 @@ def get_recommendations(user_id, user_similarity, user_movie_matrix, movies_df, 
     return recommendations
 
 
-# Antyrekomendacje dla użytkownika
+# Antyrekomendacje na podstawie klastrów
 def get_anti_recommendations(user_id, user_similarity, user_movie_matrix, movies_df, n=5):
     """
-    Generuje antyrekomendacje (filmy do unikania) dla danego użytkownika na podstawie ocen podobnych użytkowników,
-    z wykluczeniem filmów dodanych przez samego użytkownika.
+    Generuje antyrekomendacje (filmy do unikania) dla użytkownika na podstawie ocen podobnych użytkowników,
+    z wykluczeniem filmów, które użytkownik już ocenił.
 
     Args:
         user_id (int): ID użytkownika docelowego.
         user_similarity (ndarray): Macierz podobieństwa między użytkownikami.
         user_movie_matrix (DataFrame): Macierz user-item z ocenami.
-        movies_df (DataFrame): DataFrame zawierający informacje o filmach, w tym ID użytkownika, który dodał film.
+        movies_df (DataFrame): DataFrame zawierający informacje o filmach.
         n (int): Liczba antyrekomendacji do wygenerowania.
 
     Returns:
         anti_recommendations (list): Lista ID filmów, które użytkownik powinien unikać.
     """
-    similar_users = np.argsort(-user_similarity[user_id-1])[1:n+1]
+    similar_users = np.argsort(-user_similarity[user_id - 1])[1:]
     movie_scores = {}
 
+    # Zbieranie ocen filmów od podobnych użytkowników
     for sim_user in similar_users:
         sim_user_ratings = user_movie_matrix.iloc[sim_user]
-        for movie_id, rating in sim_user_ratings.items():  # Zmiana iteritems() na items()
-            # Sprawdzenie, czy użytkownik ocenił film i czy użytkownik docelowy nie dodał filmu
-            if user_movie_matrix.loc[user_id, movie_id] == 0 and movies_df[movies_df['movie_id'] == movie_id]['added_by'].values[0] != user_id:
+        for movie_id, rating in sim_user_ratings.items():
+            # Pomijamy filmy, które użytkownik już ocenił
+            if user_movie_matrix.loc[user_id, movie_id] == 0:  # Jeśli użytkownik nie ocenił filmu
                 if movie_id not in movie_scores:
                     movie_scores[movie_id] = 0
                 movie_scores[movie_id] += rating  # Sumowanie ocen
@@ -120,8 +125,8 @@ def get_anti_recommendations(user_id, user_similarity, user_movie_matrix, movies
 def main():
     """
     Główna funkcja uruchamiająca system rekomendacji filmów.
-    Ładuje dane, tworzy macierz user-item, oblicza podobieństwo między użytkownikami,
-    a następnie generuje rekomendacje i antyrekomendacje dla przykładowego użytkownika.
+    Ładuje dane, tworzy macierz user-item, grupuje użytkowników w klastry
+    i generuje rekomendacje oraz antyrekomendacje dla użytkownika.
     """
     # Ładowanie danych
     users_df, movies_df, ratings_df = load_data()
@@ -130,10 +135,10 @@ def main():
     user_movie_matrix = create_user_item_matrix(ratings_df)
 
     # Obliczanie podobieństwa użytkowników
-    user_similarity = calculate_user_similarity(user_movie_matrix)
+    user_similarity = cosine_similarity(user_movie_matrix)
 
     # Generowanie rekomendacji i antyrekomendacji dla użytkownika o ID 1
-    user_id = 2
+    user_id = 3
     recommendations = get_recommendations(user_id, user_similarity, user_movie_matrix, movies_df)
     anti_recommendations = get_anti_recommendations(user_id, user_similarity, user_movie_matrix, movies_df)
 

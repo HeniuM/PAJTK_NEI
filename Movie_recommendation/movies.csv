@@ -1,183 +1,187 @@
-movie_id,title,added_by
-1,1670,4
-2,Jak sprzedawać dragi w sieci (szybko),8
-3,Samce Alfa,9
-4,Lucyfer,8
-5,Niebieskoki Samuraj,8
-6,Barbarzyńcy,4
-7,Para Idealna,5
-8,Rojst,6
-9,Polowanie na Czerwony Październik,4
-10,Rick & Morty,4
-11,The Big Bang Theory,7
-12,Braveheart,2
-13,The Expanse,7
-14,Miasteczko South Park,3
-15,Kraina Lodu,7
-16,Dziennik Bridget Jones,9
-17,Kapitan Ameryka: Wojna bohaterów,6
-18,Avengers: Czas Ultrona,5
-19,Terminator 2,3
-20,Planeta Singli,4
-21,List do M.,2
-22,List do M. 2,3
-23,Forrest Gump,6
-24,Ex Machina,9
-25,Gran Torino,6
-26,Cicha Noc,9
-27,Battleship: Bitwa o Ziemię,2
-28,Narodziny Gwiazdy,9
-29,Kapitan Phillips,5
-30,Grand Budapest Hotel,2
-31,Wyjazd integracyjny,8
-32,John Wick,10
-33,Narcos,2
-34,Terminal,7
-35,Ona,9
-36,Whiplash,10
-37,Diabeł ubiera się u Prady,7
-38,La Casa De Papel,8
-39,Peaky Blinders,8
-40,Contratiempo,10
-41,La Cara Oculta,6
-42,Szeregowiec Ryan,8
-43,Kompania Braci,4
-44,Gladiator,3
-45,Interstellar,10
-46,W głowie się nie mieści,9
-47,Furiosa Saga Madmax,3
-48,Diuna,4
-49,Gwiezdne wojny Atak Klonów,6
-50,Rings of Power,7
-51,F.R.I.E.N.D.S,1
-52,UGLIES,6
-53,Deadpool 3,9
-54,Now you see me,8
-55,Autopsja Jane Doe,10
-56,Kapitan Ameryka: Zimowy Żołnierz,1
-57,RRRrrrr,3
-58,Konklawe 2006,9
-59,Transformers,6
-60,The Social Network,8
-61,Oppenheimer,9
-62,Dolittle,10
-63,Charlie and the chocolate factory,10
-64,Wonka,6
-65,The Emoji Movie,1
-66,Wreck-it Ralph,10
-67,Player One,7
-68,Avatar,2
-69,The Martain,6
-70,Władca Pierścieni: Drużyna Pierścienia,2
-71,From,10
-72,Chłopaki z baraków,5
-73,Deadpool1,8
-74,The Boys,1
-75,Arcane,5
-76,To,2
-77,365 Dni,1
-78,Rec 1,9
-79,Rings of power,9
-80,Władca pierścieni: Dwie wieże,9
-81,Władca pierścieni: Powrót Króla,5
-82,Prison Break,1
-83,the end of the fun***in world,6
-84,Stranger Things,8
-85,Dark,4
-86,Gambit Królowej,7
-87,Cyberpunk: Edgerunners,7
-88,Nawiedzony dom na wzgórzu,3
-89,Breaking Bad,4
-90,Forest Gump,4
-91,Rick and Morty,3
-92,Diuna 2,5
-93,Substancja,3
-94,Doktor House,10
-95,Avengers Endgame,7
-96,Deadpool,7
-97,Przełęcz ocalonych,9
-98,Venom: Let there be Carnage,2
-99,Mad Max,10
-100,Brooklyn 99,1
-101,W lesie dziś nie zaśnie nikt,1
-102,"Klik: I robisz, co chcesz",8
-103,Czerwona Nota,4
-104,Jaja w Tropikach,4
-105,Piksele,9
-106,Vaiana,8
-107,Nasze magiczne Encanto,1
-108,The social network,7
-109,Kraina jutra,2
-110,Deadpool & Wolverine,9
-111,Prestiż,4
-112,Paradoks Cloverfield,7
-113,Spider-Man: Far From Home,7
-114,Transcendencja,4
-115,Life,4
-116,Pitbul,8
-117,Idiocracy,4
-118,Circle,9
-119,The Beast (2023),10
-120,Wilk z Wall Street,6
-121,Marsjanin,5
-122,2012,7
-123,MoonFall,6
-124,The day after tomorrow,9
-125,Geostorm,5
-126,Matrix,4
-127,mordercza opona,2
-128,pixele,9
-129,Arrival,9
-130,W stronę słońca(2007),7
-131,snowpiercer,8
-132,Wędrująca ziemia,7
-133,American Sniper,1
-134,John Wick 4,2
-135,Obcy: Romulus,2
-136,Lost,5
-137,Memento,4
-138,Koe no Katachi,6
-139,Bękarty wojny,4
-140,Wojownik,10
-141,Split,10
-142,Titanic,9
-143,Ja Robot,8
-144,The Walking Dead,5
-145,Joker,9
-146,Saw,6
-147,chernobyl,1
-148,sinister,9
-149,The Counjuring,8
-150,The Nun,7
-151,The Exorcism Of Emili Rose,9
-152,Strażnicy Galaktyki,7
-153,Beekeeper,5
-154,spider man - beyond the spider verse,10
-155,Kac Wawa,9
-156,The Witcher,2
-157,The lord of the rings: The return of the king,8
-158,Asterix i Obelix: Misja kleopatra,8
-159,Czas Apokalipsy,2
-160,Brazil,1
-161,Taksówkarz,8
-162,Jestem Bogiem,2
-163,Obecność,10
-164,Blueberry,10
-165,Anihilacja,7
-166,Dom w głębi lasu,1
-167,Mars Express,5
-168,Hakowanie Świata,3
-169,Faceci w Czerni,2
-170,Maska,2
-171,Planeta Małp,8
-172,Annabelle,10
-173,Hancock,7
-174,Grawitacja,3
-175,Pięć koszmarnych nocy,2
-176,Ted 2,7
-177,"Jako w piekle, tak i na Ziemi",4
-178,Requiem dla snu,3
-179,Miasto 44,6
-180,Jarhead 2: W polu ognia,9
-181,Nie cudzołóż i nie kradnij,10
-182,Rick i Morty,5
+title,movie_id,added_by
+1670,1,4
+2012,2,7
+365 dni,3,1
+american sniper,4,1
+anihilacja,5,7
+annabelle,6,10
+arcane,7,5
+arrival,8,9
+asterix i obelix: misja kleopatra,9,8
+autopsja jane doe,10,10
+avatar,11,2
+avengers endgame,12,7
+avengers: czas ultrona,13,5
+barbarzyńcy,14,4
+battleship: bitwa o ziemię,15,2
+beekeeper,16,5
+blueberry,17,10
+braveheart,18,2
+brazil,19,1
+breaking bad,20,4
+brooklyn 99,21,1
+bękarty wojny,22,4
+charlie and the chocolate factory,23,10
+cicha noc,24,9
+circle,25,9
+contratiempo,26,10
+cyberpunk: edgerunners,27,7
+czas apokalipsy,28,2
+czerwona nota,29,4
+dark,30,4
+deadpool & wolverine,32,9
+deadpool 3,33,9
+diabeł ubiera się u prady,35,7
+diuna,36,4
+diuna 2,37,5
+doktor house,38,10
+dolittle,39,10
+dom w głębi lasu,40,1
+dziennik bridget jones,41,9
+ex machina,42,9
+f.r.i.e.n.d.s,43,1
+faceci w czerni,44,2
+forest gump,45,4
+forrest gump,46,6
+from,47,10
+furiosa saga madmax,48,3
+gambit królowej,49,7
+geostorm,50,5
+gladiator,51,3
+gran torino,52,6
+grand budapest hotel,53,2
+grawitacja,54,3
+gwiezdne wojny atak klonów,55,6
+hakowanie świata,56,3
+hancock,57,7
+idiocracy,58,4
+interstellar,59,10
+ja robot,60,8
+jaja w tropikach,61,4
+jak sprzedawać dragi w sieci (szybko),62,8
+"jako w piekle, tak i na ziemi",63,4
+jarhead 2: w polu ognia,64,9
+jestem bogiem,65,2
+john wick,66,10
+john wick 4,67,2
+joker,68,9
+kac wawa,69,9
+kapitan ameryka: wojna bohaterów,70,6
+kapitan ameryka: zimowy żołnierz,71,1
+kapitan phillips,72,5
+"klik: i robisz, co chcesz",73,8
+koe no katachi,74,6
+kompania braci,75,4
+konklawe 2006,76,9
+kraina lodu,77,7
+kraina jutra,78,2
+la cara oculta,79,6
+la casa de papel,80,8
+life,81,4
+list do m.,82,2
+list do m. 2,83,3
+lost,84,5
+lucyfer,85,8
+mad max,86,10
+mars express,87,5
+marsjanin,88,5
+maska,89,2
+matrix,90,4
+memento,91,4
+miasteczko south park,92,3
+miasto 44,93,6
+moonfall,94,6
+narcos,95,2
+narodziny gwiazdy,96,9
+nasze magiczne encanto,97,1
+nawiedzony dom na wzgórzu,98,3
+nie cudzołóż i nie kradnij,99,10
+niebieskoki samuraj,100,8
+now you see me,101,8
+obcy: romulus,102,2
+obecność,103,10
+ona,104,9
+oppenheimer,105,9
+para idealna,106,5
+paradoks cloverfield,107,7
+peaky blinders,108,8
+piksele,109,9
+pitbul,110,8
+pięć koszmarnych nocy,111,2
+planeta małp,112,8
+planeta singli,113,4
+player one,114,7
+polowanie na czerwony październik,115,4
+prestiż,116,4
+prison break,117,1
+przełęcz ocalonych,118,9
+rrrrrrr,119,3
+rec 1,120,9
+requiem dla snu,121,3
+rick and morty,122,"1,3,4,5"
+rings of power,123,7
+rojst,125,6
+samce alfa,126,9
+saw,127,6
+spider-man: far from home,128,7
+split,129,10
+stranger things,130,8
+strażnicy galaktyki,131,7
+substancja,132,3
+szeregowiec ryan,133,8
+taksówkarz,134,8
+ted 2,135,7
+terminal,136,7
+terminator 2,137,3
+the beast (2023),138,10
+the big bang theory,139,7
+the boys,140,1
+the counjuring,141,8
+the emoji movie,142,1
+the exorcism of emili rose,143,9
+the expanse,144,7
+the martain,145,6
+the nun,146,7
+the social network,147,8
+the walking dead,148,5
+the witcher,149,2
+the day after tomorrow,150,9
+the lord of the rings: the return of the king,151,8
+titanic,153,9
+to,154,2
+trailer park boys,155,5
+transcendencja,156,4
+transformers,157,6
+uglies,158,6
+vaiana,159,8
+venom: let there be carnage,160,2
+w głowie się nie mieści,161,9
+w lesie dziś nie zaśnie nikt,162,1
+w stronę słońca(2007),163,7
+whiplash,164,10
+wilk z wall street,165,6
+wojownik,166,10
+wonka,167,6
+wreck-it ralph,168,10
+wyjazd integracyjny,169,8
+wędrująca ziemia,170,7
+władca pierścieni: drużyna pierścienia,171,2
+władca pierścieni: dwie wieże,172,9
+władca pierścieni: powrót króla,173,5
+chernobyl,174,1
+mordercza opona,175,2
+pixele,176,9
+sinister,177,9
+snowpiercer,178,8
+spider man - beyond the spider verse,179,10
+the end of the fun***in world,180,6
+Rick & Morty,181,
+Władca Pierścieni: Drużyna Pierśienia,182,
+Chłopaki z baraków,183,
+Deadpool1,184,
+Władca pierśieni: Dwie wieże,185,
+Władca pierśieni: Powrót Króla,186,
+Deadpool,187,
+Klik: I robisz co chcesz,188,
+Jako w piekle tak i na Ziemi,189,
+Rick i Morty,190,

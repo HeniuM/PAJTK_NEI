@@ -1,218 +1,229 @@
-user_id,movie_id,rating
-1,1,9
-1,2,8
-1,3,9
-1,4,3
-1,5,9
-1,6,9
-1,7,7.0
-1,8,8
-1,9,10.0
-1,10,10.0
-1,11,8.0
-1,12,10.0
-1,13,7.0
-1,14,9.0
-1,15,5.0
-1,16,6.0
-1,17,3.0
-1,18,2.0
-1,19,9.0
-1,20,7.0
-1,21,7.0
-1,22,2
-1,23,10.0
-1,24,10.0
-1,25,9.0
-1,26,1.0
-1,27,1.0
-1,28,2
-1,29,9.0
-1,30,9.0
-1,31,1.0
-1,32,7.0
-1,33,10.0
-1,34,8.0
-1,35,8.0
-1,36,10.0
-1,37,9.0
-1,38,8.0
-1,39,9.0
-1,40,9.0
-1,41,10.0
-2,42,10
-2,43,9
-2,44,10
-2,45,10
-2,46,10
-2,47,5
-2,48,10
-2,49,9.0
-2,50,8.0
-2,51,10.0
-2,52,7.5
-2,53,9.0
-2,54,10.0
-2,55,7.0
-2,56,9.0
-2,57,5.0
-2,58,7.0
-2,59,8.0
-2,60,9.0
-2,61,10.0
-2,62,8.0
-2,39,10.0
-2,63,9.0
-2,64,8.0
-2,65,7.0
-2,66,10.0
-2,67,8.0
-2,68,10.0
-2,23,10.0
-2,69,9.0
-3,70,10
-3,71,8
-3,72,10
-3,73,9
-3,74,3
-3,75,7
-3,76,2.0
-3,77,1
-3,78,6.0
-3,55,7.0
-3,79,0.0
-3,80,9.0
-3,81,10.0
-3,4,7.0
-3,82,8.0
-3,83,0.0
-3,84,8.0
-3,85,4.0
-3,86,7.0
-3,87,7.0
-3,88,8.0
-3,89,8
-3,39,4.0
-3,68,9.0
-4,90,10
-4,91,9
-4,92,1
-4,93,10
-4,1,10
-4,94,10
-4,95,5.0
-4,96,7
-5,97,9
-5,98,5
-5,92,10
-5,99,3
-5,100,9
-5,101,2
-5,75,9.0
-5,102,6
-5,103,8.0
-5,104,8.0
-5,55,6.0
-5,105,7.0
-5,78,8.0
-5,91,9.0
-5,87,8.0
-5,106,7.0
-5,107,8.0
-5,108,8.0
-5,109,5.0
-5,110,10.0
-5,111,8.0
-6,112,8
-6,113,10
-6,45,10
-6,24,7
-6,114,8
-6,115,7
-6,116,1.0
-6,77,1
-6,117,7.0
-6,118,5.0
-6,55,8.0
-6,119,1.0
-6,75,10.0
-6,78,4.0
-6,120,6.0
-6,121,8.0
-6,122,6.0
-6,123,3.0
-6,124,7.0
-6,125,7.0
-6,91,9.0
-6,126,4
-6,127,5.0
-6,68,7.0
-6,128,3.0
-6,129,7.0
-6,130,7.0
-6,131,6
-6,132,7.0
-7,133,8
-7,134,10
-7,135,6
-7,136,10
-7,74,6
-7,137,4
-7,138,10.0
-7,139,7
-7,140,10.0
-7,141,7.0
-8,142,10
-8,143,8
-8,144,9
-8,145,3
-8,146,2
-8,147,9
-8,148,8.0
-8,149,7
-8,150,4.0
-8,151,7.0
-9,32,10
-9,75,8
-9,152,8
-9,153,7
-9,154,10
-9,155,1
-9,156,6.0
-9,157,10
-9,158,9.0
-10,126,10
-10,159,10
-10,160,10
-10,24,9
-10,161,9
-10,162,9
-10,163,8.0
-10,164,8
-10,165,8.0
-10,166,8.0
-10,167,8.0
-10,168,7.0
-10,169,7.0
-10,104,7.0
-10,120,7.0
-10,170,6.0
-10,171,6.0
-10,172,5.0
-10,173,5.0
-10,174,5.0
-10,175,5.0
-10,176,4
-10,177,4.0
-10,178,3.0
-10,68,3.0
-10,179,2.0
-10,180,1.0
-10,181,1
-10,33,8.0
-10,31,1.0
-10,30,9.0
-10,23,10.0
-10,14,7.0
-10,182,10.0
-10,1,8.0
+user_id,movie_id,rating,title
+1,1,9.0,1670
+1,2,8.0,2012
+1,3,9.0,365 Dni
+1,4,3.0,American Sniper
+1,5,9.0,Anihilacja
+1,6,9.0,Annabelle
+1,7,7.0,Arcane
+1,8,8.0,Arrival
+1,9,10.0,Asterix i Obelix: Misja kleopatra
+1,10,10.0,Autopsja Jane Doe
+1,11,8.0,Avatar
+1,12,10.0,Avengers Endgame
+1,13,7.0,Avengers: Czas Ultrona
+1,14,9.0,Barbarzyńcy
+1,15,5.0,Battleship: Bitwa o Ziemię
+1,16,6.0,Beekeeper
+1,17,3.0,Blueberry
+1,18,2.0,Braveheart
+1,19,9.0,Brazil
+1,20,7.0,Breaking Bad
+1,21,7.0,Brooklyn 99
+1,22,2.0,Bękarty wojny
+1,23,10.0,Charlie and the chocolate factory
+1,24,10.0,Cicha Noc
+1,25,9.0,Circle
+1,26,1.0,Contratiempo
+1,27,1.0,Cyberpunk: Edgerunners
+1,28,2.0,Czas Apokalipsy
+1,29,9.0,Czerwona Nota
+1,30,9.0,Dark
+1,31,1.0,Deadpool
+1,32,7.0,Deadpool & Wolverine
+1,33,10.0,Deadpool 3
+1,34,8.0,Deadpool1
+1,35,8.0,Diabeł ubiera się u Prady
+1,36,10.0,Diuna
+1,37,9.0,Diuna 2
+1,38,8.0,Doktor House
+1,39,9.0,Dolittle
+1,40,9.0,Dom w głębi lasu
+1,41,10.0,Dziennik Bridget Jones
+1,122,10.0,Rick and Morty
+2,42,10.0,Ex Machina
+2,43,9.0,F.R.I.E.N.D.S
+2,44,10.0,Faceci w Czerni
+2,45,10.0,Forest Gump
+2,46,10.0,Forrest Gump
+2,47,5.0,From
+2,48,10.0,Furiosa Saga Madmax
+2,49,9.0,Gambit Królowej
+2,50,8.0,Geostorm
+2,51,10.0,Gladiator
+2,52,7.5,Gran Torino
+2,53,9.0,Grand Budapest Hotel
+2,54,10.0,Grawitacja
+2,55,7.0,Gwiezdne wojny Atak Klonów
+2,56,9.0,Hakowanie Świata
+2,57,5.0,Hancock
+2,58,7.0,Idiocracy
+2,59,8.0,Interstellar
+2,60,9.0,Ja Robot
+2,61,10.0,Jaja w Tropikach
+2,62,8.0,Jak sprzedawać dragi w sieci (szybko)
+2,39,10.0,Dolittle
+2,63,9.0,"Jako w piekle, tak i na Ziemi"
+2,64,8.0,Jarhead 2: W polu ognia
+2,65,7.0,Jestem Bogiem
+2,66,10.0,John Wick
+2,67,8.0,John Wick 4
+2,68,10.0,Joker
+2,23,10.0,Charlie and the chocolate factory
+2,69,9.0,Kac Wawa
+3,70,10.0,Kapitan Ameryka: Wojna bohaterów
+3,71,8.0,Kapitan Ameryka: Zimowy Żołnierz
+3,72,10.0,Kapitan Phillips
+3,73,9.0,"Klik: I robisz, co chcesz"
+3,74,3.0,Koe no Katachi
+3,75,7.0,Kompania Braci
+3,76,2.0,Konklawe 2006
+3,77,1.0,Kraina Lodu
+3,78,6.0,Kraina jutra
+3,55,7.0,Gwiezdne wojny Atak Klonów
+3,79,0.0,La Cara Oculta
+3,80,9.0,La Casa De Papel
+3,81,10.0,Life
+3,4,7.0,American Sniper
+3,82,8.0,List do M.
+3,83,0.0,List do M. 2
+3,84,8.0,Lost
+3,85,4.0,Lucyfer
+3,86,7.0,Mad Max
+3,87,7.0,Mars Express
+3,88,8.0,Marsjanin
+3,89,8.0,Maska
+3,39,4.0,Dolittle
+3,68,9.0,Joker
+4,90,10.0,Matrix
+4,91,9.0,Memento
+4,92,1.0,Miasteczko South Park
+4,93,10.0,Miasto 44
+4,1,10.0,1670
+4,94,10.0,MoonFall
+4,95,5.0,Narcos
+4,96,7.0,Narodziny Gwiazdy
+5,97,9.0,Nasze magiczne Encanto
+5,98,5.0,Nawiedzony dom na wzgórzu
+5,92,10.0,Miasteczko South Park
+5,99,3.0,Nie cudzołóż i nie kradnij
+5,100,9.0,Niebieskoki Samuraj
+5,101,2.0,Now you see me
+5,75,9.0,Kompania Braci
+5,102,6.0,Obcy: Romulus
+5,103,8.0,Obecność
+5,104,8.0,Ona
+5,55,6.0,Gwiezdne wojny Atak Klonów
+5,105,7.0,Oppenheimer
+5,78,8.0,Kraina jutra
+5,91,9.0,Memento
+5,87,8.0,Mars Express
+5,106,7.0,Para Idealna
+5,107,8.0,Paradoks Cloverfield
+5,108,8.0,Peaky Blinders
+5,109,5.0,Piksele
+5,110,10.0,Pitbul
+5,111,8.0,Pięć koszmarnych nocy
+6,112,8.0,Planeta Małp
+6,113,10.0,Planeta Singli
+6,45,10.0,Forest Gump
+6,24,7.0,Cicha Noc
+6,114,8.0,Player One
+6,115,7.0,Polowanie na Czerwony Październik
+6,116,1.0,Prestiż
+6,77,1.0,Kraina Lodu
+6,117,7.0,Prison Break
+6,118,5.0,Przełęcz ocalonych
+6,55,8.0,Gwiezdne wojny Atak Klonów
+6,119,1.0,RRRrrrr
+6,75,10.0,Kompania Braci
+6,78,4.0,Kraina jutra
+6,120,6.0,Rec 1
+6,121,8.0,Requiem dla snu
+6,122,6.0,Rick and Morty
+6,123,3.0,Rings of Power
+6,124,7.0,Rings of power
+6,125,7.0,Rojst
+6,91,9.0,Memento
+6,126,4.0,Samce Alfa
+6,127,5.0,Saw
+6,68,7.0,Joker
+6,128,3.0,Spider-Man: Far From Home
+6,129,7.0,Split
+6,130,7.0,Stranger Things
+6,131,6.0,Strażnicy Galaktyki
+6,132,7.0,Substancja
+7,133,8.0,Szeregowiec Ryan
+7,134,10.0,Taksówkarz
+7,135,6.0,Ted 2
+7,136,10.0,Terminal
+7,74,6.0,Koe no Katachi
+7,137,4.0,Terminator 2
+7,138,10.0,The Beast (2023)
+7,139,7.0,The Big Bang Theory
+7,140,10.0,The Boys
+7,141,7.0,The Counjuring
+8,142,10.0,The Emoji Movie
+8,143,8.0,The Exorcism Of Emili Rose
+8,144,9.0,The Expanse
+8,145,3.0,The Martain
+8,146,2.0,The Nun
+8,147,9.0,The Social Network
+8,148,8.0,The Walking Dead
+8,149,7.0,The Witcher
+8,150,4.0,The day after tomorrow
+8,151,7.0,The lord of the rings: The return of the king
+9,32,10.0,Deadpool & Wolverine
+9,75,8.0,Kompania Braci
+9,152,8.0,The social network
+9,153,7.0,Titanic
+9,154,10.0,To
+9,155,1.0,Trailer Park Boys
+9,156,6.0,Transcendencja
+9,157,10.0,Transformers
+9,158,9.0,UGLIES
+10,126,10.0,Samce Alfa
+10,159,10.0,Vaiana
+10,160,10.0,Venom: Let there be Carnage
+10,24,9.0,Cicha Noc
+10,161,9.0,W głowie się nie mieści
+10,162,9.0,W lesie dziś nie zaśnie nikt
+10,163,8.0,W stronę słońca(2007)
+10,164,8.0,Whiplash
+10,165,8.0,Wilk z Wall Street
+10,166,8.0,Wojownik
+10,167,8.0,Wonka
+10,168,7.0,Wreck-it Ralph
+10,169,7.0,Wyjazd integracyjny
+10,104,7.0,Ona
+10,120,7.0,Rec 1
+10,170,6.0,Wędrująca ziemia
+10,171,6.0,Władca Pierścieni: Drużyna Pierścienia
+10,172,5.0,Władca pierścieni: Dwie wieże
+10,173,5.0,Władca pierścieni: Powrót Króla
+10,174,5.0,chernobyl
+10,175,5.0,mordercza opona
+10,176,4.0,pixele
+10,177,4.0,sinister
+10,178,3.0,snowpiercer
+10,68,3.0,Joker
+10,179,2.0,spider man - beyond the spider verse
+10,180,1.0,the end of the fun***in world
+10,181,1.0,
+10,33,8.0,Deadpool 3
+10,31,1.0,Deadpool
+10,30,9.0,Dark
+10,23,10.0,Charlie and the chocolate factory
+10,14,7.0,Barbarzyńcy
+10,182,10.0,
+10,1,8.0,1670
+1,181,10.0,
+3,182,10.0,
+3,183,10.0,
+3,184,9.0,
+3,185,9.0,
+3,186,10.0,
+4,187,7.0,
+5,188,6.0,
+10,189,4.0,
+10,190,10.0,
