@@ -1,5 +1,5 @@
 """
-Corrected Task 2: Animal Recognition
+Task 2: Animal Recognition
 This script now uses data augmentation and a pre-trained model (MobileNetV2) for accurate classification of images.
 It also includes proper prediction outputs for the dog and cat images.
 """

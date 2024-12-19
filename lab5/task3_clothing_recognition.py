@@ -1,5 +1,5 @@
 """
-Corrected Task 3: Clothing Recognition
+Task 3: Clothing Recognition
 Uses the same structure as Task 2 with augmentation and pre-trained MobileNetV2 for recognizing jackets and trousers.
 Includes proper prediction outputs for jacket and trousers images.
 """
