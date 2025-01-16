@@ -35,7 +35,7 @@ def get_dominant_color(b, g, r):
     elif b > r and b > g:
         return "Niebieski"
     else:
-        return "Brak dominującego koloru"
+        return "Brak dominujacego koloru"
 
 
 def draw_crosshair(frame, x, y):
